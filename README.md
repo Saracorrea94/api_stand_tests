@@ -50,6 +50,8 @@ def positive_assert(first_name):
     user_response = sender_stand_request.post_new_user(user_body)
     assert user_response.status_code == 201
     assert user_response.json()["authToken"] != ""
+    
+    Se hacen preubas negativas y positivas.
 
 📎 Notas adicionales
 Proyecto desarrollado como parte del Bootcamp de QA Engineer de TripleTen.
